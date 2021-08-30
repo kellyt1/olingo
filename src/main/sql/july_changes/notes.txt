@@ -1,0 +1,22 @@
+-- This script contains all the changes as discussed with the business
+-- The intent of this script is to modify two materialized views within the covidsalesforce database
+-- Modifying the views requires dropping and recreated the views along with their dependencies
+
+--Please run the scripts in the following order
+-- #1 investigation_materialized_views.sql
+-- #2 CovidIntakeDedup.sql
+-- #3 CovidIntakePositive.sql
+-- #4 CovidIntakeDedupUncoded.sql
+-- #5 CovidIntakePositiveUncoded.sql
+-- #6 RemoveCovidIntake.sql
+
+
+-- Schema
+-- COVID_POSITIVE
+--      CovidIntakeDedup
+--      CovidIntakePositive
+--      RemoveCovidIntake
+
+-- COVID_ABNORMAL
+--      CovidIntakeDedupUncoded
+--      CovidIntakePosiitiveUncoded
